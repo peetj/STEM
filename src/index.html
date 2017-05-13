@@ -31,6 +31,57 @@
 <body>
     <h1>Numbers - Big and Small</h1>
 
+    <blockquote class="grapefruit" cite="https://www.brainyquote.com/quotes/quotes/s/shakuntala598202.html?src=t_numbers">
+        <h1 class="blockquote-heading">
+            <span class="Cgrapefruit">Without mathematics, there's nothing you can do. Everything around you is mathematics. Everything around you is numbers.</span>
+            <span class="blockquote-author">Shakuntala Devi</span>
+        </h1>
+    </blockquote>
+
+    <div class="container">
+        <div class="components">
+            <span class="body-text">How many</span>
+            <select class="time-start" name="time-start" id="time-start">
+                <option value="0">planck time</option>
+                <option value="1">yoctoseconds</option>
+                <option value="2">zeptoseconds</option>
+                <option value="3">attoseconds</option>
+                <option value="4">femtoseconds</option>
+                <option value="5">picoseconds</option>
+                <option value="6">nanoseconds</option>
+                <option value="7">microseconds</option>
+                <option value="8">milliseconds</option>
+                <option value="9">centiseconds</option>
+                <option value="10">deciseconds</option>
+                <option value="11" selected="selected">seconds</option>
+            </select>
+            <span class="body-text">in a</span>
+            <select class="query-type" name="query-type" id="query-type" style="display:none">
+                <option value="0">in a </option>
+                <option value="1">since</option>
+                <option value="2">until</option>
+            </select>
+            <select class="time-end" name="time-end" id="time-end">
+                <option value="11" selected="selected">second</option>
+                <option value="12">minute</option>
+                <option value="13">hour</option>
+                <option value="14">day</option>
+                <option value="15">week</option>
+                <option value="16">month</option>
+                <option value="17">year</option>
+                <option value="18">decade</option>
+                <option value="19">century</option>
+                <option value="20">millenium</option>
+            </select>
+        </div>
+        <div class="answer">
+            <span class="answer-span body-text">
+                0
+            </span>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

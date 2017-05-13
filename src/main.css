@@ -1,3 +1,13 @@
+/*
+// 12 - CSS3 Blockquote Effects Demo
+// Made with ❤ by @Pawan_Mall
+// http://www.pawanmall.net
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Montez');
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+
+
 html,body,div,span,applet,object,iframe,h1,h2,
 h3,h4,h5,h6,p,blockquote,a,abbr,acronym,address,
 big,cite,del,dfn,em,img,ins,kbd,q,s,samp,small,
@@ -22,7 +32,125 @@ html {
 }
 
 body {
-    background: url(./bg.jpg) no-repeat;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0.5;
+    background: url(./bg.png) no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 1);
+    padding: 30px;
+    font-family: arial;
+}
+h1 {
+    font-size: 6em;
+    color: #ff0054;
+}
+blockquote{
+  display:inline-block;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  max-width: 400px;
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #666;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+
+  /*Borders - (Optional)*/
+  border-left-style: solid;
+  border-left-width: 15px;
+  border-right-style: solid;
+  border-right-width: 2px;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote h1 {
+    font-size: 100%;
+}
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
+
+blockquote .blockquote-author {
+    font-family: 'Francois One';
+    color: #666;
+}
+  /*Default Color Palette*/
+blockquote.default{
+  border-left-color: #656d77;
+  border-right-color: #434a53;
+}
+
+/*Grapefruit Color Palette*/
+blockquote.grapefruit{
+  border-left-color: #ed5565;
+  border-right-color: #da4453;
+}
+span.Cgrapefruit{
+  color:#da4453;
+}
+.components, .answer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+.components {
+    padding-top: 150px;
+}
+.components > .body-text, .components > .time-start, .components > .query-type, .components > .time-end {
+    font-size: 4em;
+    font-weight: bold;
+}
+.components > span, .components select {
+    margin-right: 20px;
+}
+.body-text {
+    color: #FFFFFF;
+}
+.answer {
+    padding-top: 60px;
+}
+.answer > .body-text {
+    color: #ff0054;
+    font-size: 6em;
+    font-weight: bold;
 }
