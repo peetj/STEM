@@ -178,10 +178,11 @@ span.Cgrapefruit{
 
     .answer {
         padding-top: 0;
+        font-size: 50%;
     }
 
     .components > .body-text, .components > .time-start, .components > .query-type, .components > .time-end {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     select.time-start, select.time-end, span.body-text {
