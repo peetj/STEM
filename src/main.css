@@ -154,6 +154,6 @@ span.Cgrapefruit{
     font-size: 6em;
     font-weight: bold;
 }
-.st-total {
+#st-1 .st-total .st-label, #st-1 .st-total .st-shares {
     color: #FFFFFF;
 }
