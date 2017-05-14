@@ -127,6 +127,12 @@ blockquote.grapefruit{
 span.Cgrapefruit{
   color:#da4453;
 }
+
+@media only screen and (max-width: 600px)  {
+    .components {
+        font-size: 50%;
+    }
+}
 .components, .answer {
     display: flex;
     flex-direction: row;
