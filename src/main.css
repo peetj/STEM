@@ -176,6 +176,10 @@ span.Cgrapefruit{
         padding-top: 30px;
     }
 
+    .answer {
+        padding-top: 0;
+    }
+
     .components > .body-text, .components > .time-start, .components > .query-type, .components > .time-end {
         font-size: 2em;
     }
