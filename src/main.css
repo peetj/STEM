@@ -173,8 +173,9 @@ span.Cgrapefruit{
 
     .components {
         flex-direction: column;
+        padding-top: 30px;
     }
-    
+
     .components > .body-text, .components > .time-start, .components > .query-type, .components > .time-end {
         font-size: 2em;
     }
