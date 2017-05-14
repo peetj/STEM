@@ -128,11 +128,6 @@ span.Cgrapefruit{
   color:#da4453;
 }
 
-@media only screen and (max-width: 600px)  {
-    .components {
-        font-size: 50%;
-    }
-}
 .components, .answer {
     display: flex;
     flex-direction: row;
@@ -162,4 +157,47 @@ span.Cgrapefruit{
 }
 #st-1 .st-total .st-label, #st-1 .st-total .st-shares {
     color: #FFFFFF;
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .components {
+        flex-direction: column;
+    }
+    
+    .components > .body-text, .components > .time-start, .components > .query-type, .components > .time-end {
+        font-size: 2em;
+    }
+
+    select.time-start, select.time-end, span.body-text {
+        display: block;
+    }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
 }
